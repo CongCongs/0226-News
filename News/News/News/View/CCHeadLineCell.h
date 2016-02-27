@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+@class CCHeadLineModel;
 
 @interface CCHeadLineCell : UICollectionViewCell
+
+@property (nonatomic,strong) CCHeadLineModel *model;
 
 @end

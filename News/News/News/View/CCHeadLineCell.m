@@ -7,14 +7,22 @@
 //
 
 #import "CCHeadLineCell.h"
+#import "CCHeadLineModel.h"
+#import <UIImageView+WebCache.h>
 
 @interface CCHeadLineCell ()
 
 @property (weak, nonatomic) IBOutlet UIImageView *iconView;
-@property (weak, nonatomic) IBOutlet UILabel *titleLabel;
-@property (weak, nonatomic) IBOutlet UIPageControl *pageControl;
 
 @end
+
 @implementation CCHeadLineCell
+
+- (void)setModel:(CCHeadLineModel *)model {
+    
+    _model = model;
+    
+    [_iconView sd_setImageWithURL:[NSURL URLWithString:model.imgsrc]];
+}
 
 @end

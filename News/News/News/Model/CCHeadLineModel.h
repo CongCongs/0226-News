@@ -11,5 +11,6 @@
 @interface CCHeadLineModel : NSObject
 @property (nonatomic,copy) NSString *title;
 @property (nonatomic,copy) NSString *imgsrc;
-//+ (NSArray *)models;
++ (instancetype)modelWithDict:(NSDictionary *)dict;
++ (void)headLineModelWithURL:(NSString *)URLString finished:(void(^)(NSArray *data))finished;
 @end

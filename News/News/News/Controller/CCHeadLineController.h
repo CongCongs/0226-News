@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface CCHeadLineController : UICollectionViewController
+@interface CCHeadLineController : UIViewController
 
 @end
