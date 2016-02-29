@@ -44,15 +44,16 @@ static NSString * const reuseIdentifier = @"Cell";
 }
 
 - (void)loadData {
+    __weak typeof(self) weakSelf = self;
     [CCHeadLineModel headLineModelWithURL:@"ad/headline/0-4.html" finished:^(NSArray *data) {
         NSMutableArray *temp = [NSMutableArray arrayWithArray:data];
         [temp insertObject:[data lastObject] atIndex:0];
         [temp addObject:[data firstObject]];
-        self.data = temp.copy;
-        self.pageControl.numberOfPages = self.data.count-2;
-        [self.collectionView reloadData];
+        weakSelf.data = temp.copy;
+        weakSelf.pageControl.numberOfPages = weakSelf.data.count-2;
+        [weakSelf.collectionView reloadData];
         // 加载初始Label
-        [self scrollViewDidEndDecelerating:self.collectionView];
+        [self scrollViewDidEndDecelerating:weakSelf.collectionView];
         // 异步加载数据 网络延迟
 //        [self.collectionView scrollToItemAtIndexPath:[NSIndexPath indexPathForItem:1 inSection:0] atScrollPosition:UICollectionViewScrollPositionCenteredHorizontally animated:NO];
     }];

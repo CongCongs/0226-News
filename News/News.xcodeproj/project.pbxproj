@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1050C6941C82B5500097568B /* CCNewsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1050C6931C82B5500097568B /* CCNewsController.m */; };
+		1050C6971C82B6330097568B /* CCNewsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1050C6961C82B6330097568B /* CCNewsCell.m */; };
+		1050C69A1C82B6570097568B /* CCNewsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1050C6991C82B6570097568B /* CCNewsModel.m */; };
+		10AAA56D1C83CEBF00E078F1 /* CCImagesModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 10AAA56C1C83CEBF00E078F1 /* CCImagesModel.m */; };
+		10AAA5711C83EC1D00E078F1 /* NSObject+Log.m in Sources */ = {isa = PBXBuildFile; fileRef = 10AAA5701C83EC1D00E078F1 /* NSObject+Log.m */; };
 		10AC36961C8063AB00F6C89E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 10AC36951C8063AB00F6C89E /* main.m */; };
 		10AC36991C8063AC00F6C89E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 10AC36981C8063AC00F6C89E /* AppDelegate.m */; };
 		10AC36A11C8063AC00F6C89E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 10AC36A01C8063AC00F6C89E /* Assets.xcassets */; };
@@ -21,6 +26,16 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1050C6921C82B5500097568B /* CCNewsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCNewsController.h; sourceTree = "<group>"; };
+		1050C6931C82B5500097568B /* CCNewsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCNewsController.m; sourceTree = "<group>"; };
+		1050C6951C82B6330097568B /* CCNewsCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CCNewsCell.h; path = ../Model/CCNewsCell.h; sourceTree = "<group>"; };
+		1050C6961C82B6330097568B /* CCNewsCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CCNewsCell.m; path = ../Model/CCNewsCell.m; sourceTree = "<group>"; };
+		1050C6981C82B6570097568B /* CCNewsModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCNewsModel.h; sourceTree = "<group>"; };
+		1050C6991C82B6570097568B /* CCNewsModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCNewsModel.m; sourceTree = "<group>"; };
+		10AAA56B1C83CEBF00E078F1 /* CCImagesModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCImagesModel.h; sourceTree = "<group>"; };
+		10AAA56C1C83CEBF00E078F1 /* CCImagesModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCImagesModel.m; sourceTree = "<group>"; };
+		10AAA56F1C83EC1D00E078F1 /* NSObject+Log.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Log.h"; sourceTree = "<group>"; };
+		10AAA5701C83EC1D00E078F1 /* NSObject+Log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Log.m"; sourceTree = "<group>"; };
 		10AC36911C8063AB00F6C89E /* News.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = News.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		10AC36951C8063AB00F6C89E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		10AC36971C8063AB00F6C89E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -56,6 +71,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		10AAA56E1C83EC1D00E078F1 /* Log */ = {
+			isa = PBXGroup;
+			children = (
+				10AAA56F1C83EC1D00E078F1 /* NSObject+Log.h */,
+				10AAA5701C83EC1D00E078F1 /* NSObject+Log.m */,
+			);
+			path = Log;
+			sourceTree = "<group>";
+		};
 		10AC36881C8063AB00F6C89E = {
 			isa = PBXGroup;
 			children = (
@@ -112,6 +136,8 @@
 			children = (
 				10E13BF11C80731B00496D7F /* CCHeadLineController.h */,
 				10E13BF21C80731B00496D7F /* CCHeadLineController.m */,
+				1050C6921C82B5500097568B /* CCNewsController.h */,
+				1050C6931C82B5500097568B /* CCNewsController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -121,6 +147,10 @@
 			children = (
 				10E13BF71C80813E00496D7F /* CCHeadLineModel.h */,
 				10E13BF81C80813E00496D7F /* CCHeadLineModel.m */,
+				1050C6981C82B6570097568B /* CCNewsModel.h */,
+				1050C6991C82B6570097568B /* CCNewsModel.m */,
+				10AAA56B1C83CEBF00E078F1 /* CCImagesModel.h */,
+				10AAA56C1C83CEBF00E078F1 /* CCImagesModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -131,6 +161,8 @@
 				10E13BEF1C8071C000496D7F /* News.storyboard */,
 				10E13BF41C807FDF00496D7F /* CCHeadLineCell.h */,
 				10E13BF51C807FDF00496D7F /* CCHeadLineCell.m */,
+				1050C6951C82B6330097568B /* CCNewsCell.h */,
+				1050C6961C82B6330097568B /* CCNewsCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -138,6 +170,7 @@
 		10E13BFA1C8087C900496D7F /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				10AAA56E1C83EC1D00E078F1 /* Log */,
 				10E13BFB1C80881400496D7F /* CCHTTPManager.h */,
 				10E13BFC1C80881400496D7F /* CCHTTPManager.m */,
 				10E13BFE1C80894800496D7F /* CCApiManager.h */,
@@ -287,8 +320,13 @@
 			files = (
 				10AC36991C8063AC00F6C89E /* AppDelegate.m in Sources */,
 				10AC36961C8063AB00F6C89E /* main.m in Sources */,
+				10AAA5711C83EC1D00E078F1 /* NSObject+Log.m in Sources */,
 				10E13C001C80894800496D7F /* CCApiManager.m in Sources */,
+				10AAA56D1C83CEBF00E078F1 /* CCImagesModel.m in Sources */,
 				10E13BF31C80731B00496D7F /* CCHeadLineController.m in Sources */,
+				1050C69A1C82B6570097568B /* CCNewsModel.m in Sources */,
+				1050C6971C82B6330097568B /* CCNewsCell.m in Sources */,
+				1050C6941C82B5500097568B /* CCNewsController.m in Sources */,
 				10E13BFD1C80881400496D7F /* CCHTTPManager.m in Sources */,
 				10E13BF91C80813E00496D7F /* CCHeadLineModel.m in Sources */,
 				10E13BF61C807FDF00496D7F /* CCHeadLineCell.m in Sources */,
@@ -348,6 +386,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				RUN_CLANG_STATIC_ANALYZER = NO;
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -384,6 +423,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				RUN_CLANG_STATIC_ANALYZER = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};

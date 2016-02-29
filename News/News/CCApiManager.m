@@ -20,7 +20,7 @@
     return instance;
 }
 
-- (void)requestHeadLineDataWithURLString:(NSString *)URLString success:(void (^)(id))success error:(void (^)(NSError *))error {
+- (void)requestDataWithURLString:(NSString *)URLString success:(void (^)(id))success error:(void (^)(NSError *))error {
     [[CCHTTPManager sharedManager] GET:URLString parameters:nil progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         NSAssert(success!=nil, @"success回调不能为空");
         success(responseObject);

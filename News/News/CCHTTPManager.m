@@ -16,6 +16,7 @@
     static CCHTTPManager *instance;
     dispatch_once(&onceToken, ^{
         instance = [[self alloc] initWithBaseURL:CCBaseURL sessionConfiguration:[NSURLSessionConfiguration defaultSessionConfiguration]];
+        instance.responseSerializer.acceptableContentTypes = [NSSet setWithObjects:@"application/json", @"text/json", @"text/javascript", @"text/html", nil];
     });
     return instance;
 }
