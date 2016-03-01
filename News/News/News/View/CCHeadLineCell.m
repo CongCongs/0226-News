@@ -22,7 +22,7 @@
     
     _model = model;
     
-    [_iconView sd_setImageWithURL:[NSURL URLWithString:model.imgsrc]];
+    [_iconView sd_setImageWithURL:[NSURL URLWithString:model.imgsrc] placeholderImage:nil options:SDWebImageRetryFailed|SDWebImageLowPriority];
 }
 
 @end

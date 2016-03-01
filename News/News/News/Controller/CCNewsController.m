@@ -9,6 +9,7 @@
 #import "CCNewsController.h"
 #import "CCNewsModel.h"
 #import "CCNewsCell.h"
+#import "CCChannelModel.h"
 
 @interface CCNewsController ()
 
@@ -26,7 +27,7 @@
 
 - (void)loadData {
     __weak typeof(self) weakSelf = self;
-    [CCNewsModel newsModelWithURL:@"article/headline/T1348647853363/0-20.html" finished:^(NSArray *data) {
+    [CCNewsModel newsModelWithURL:[NSString stringWithFormat:@"article/headline/%@/0-20.html",self.channelID] finished:^(NSArray *data) {
         weakSelf.data = data;
         [weakSelf.tableView reloadData];
     }];

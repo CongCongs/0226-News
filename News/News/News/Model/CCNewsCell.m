@@ -27,14 +27,14 @@
 
 - (void)setModel:(CCNewsModel *)model {
     _model = model;
-    [self.iconView sd_setImageWithURL:[NSURL URLWithString:model.imgsrc]];
+    [self.iconView sd_setImageWithURL:[NSURL URLWithString:model.imgsrc] placeholderImage:nil options:SDWebImageRetryFailed|SDWebImageLowPriority];
     self.titleLabel.text = model.title;
     self.detailLabel.text = model.digest;
     self.replyLabel.text = [NSString stringWithFormat:@"%@跟帖",model.replyCount];
     if (model.imgextra) {
         [self.imgextra enumerateObjectsUsingBlock:^(UIImageView * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
             CCImagesModel *temp = model.imgextra[idx];
-            [obj sd_setImageWithURL:[NSURL URLWithString:temp.imgsrc]];
+            [obj sd_setImageWithURL:[NSURL URLWithString:temp.imgsrc] placeholderImage:nil options:SDWebImageRetryFailed|SDWebImageLowPriority];
         }];
     }
 }
@@ -50,9 +50,9 @@
 }
 + (CGFloat)cellHeightWithModel:(CCNewsModel *)model {
     if (model.imgextra) {
-        return 130;
+        return 120;
     }else if (model.imgType) {
-        return 150;
+        return 200;
     }else {
         return 80;
     }

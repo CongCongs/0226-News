@@ -10,8 +10,16 @@
 		1050C6941C82B5500097568B /* CCNewsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1050C6931C82B5500097568B /* CCNewsController.m */; };
 		1050C6971C82B6330097568B /* CCNewsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1050C6961C82B6330097568B /* CCNewsCell.m */; };
 		1050C69A1C82B6570097568B /* CCNewsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1050C6991C82B6570097568B /* CCNewsModel.m */; };
+		10510BC51C841CA800B80C18 /* topic_news.json in Resources */ = {isa = PBXBuildFile; fileRef = 10510BC41C841CA800B80C18 /* topic_news.json */; };
+		10510BCC1C84254400B80C18 /* CCChannelModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 10510BCA1C84254400B80C18 /* CCChannelModel.m */; };
+		10510BD51C84254A00B80C18 /* CCApiManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 10510BCF1C84254A00B80C18 /* CCApiManager.m */; };
+		10510BD61C84254A00B80C18 /* CCHTTPManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 10510BD11C84254A00B80C18 /* CCHTTPManager.m */; };
+		10510BD71C84254A00B80C18 /* NSObject+Log.m in Sources */ = {isa = PBXBuildFile; fileRef = 10510BD41C84254A00B80C18 /* NSObject+Log.m */; };
+		10510BD91C84323200B80C18 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 10510BD81C84323200B80C18 /* Home.storyboard */; };
+		10510BDC1C84325000B80C18 /* CCHomeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 10510BDB1C84325000B80C18 /* CCHomeController.m */; };
+		10510BDF1C84334800B80C18 /* CCChannelLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 10510BDE1C84334800B80C18 /* CCChannelLabel.m */; };
+		10510BE21C8444B800B80C18 /* CCChannelNewsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 10510BE11C8444B800B80C18 /* CCChannelNewsCell.m */; };
 		10AAA56D1C83CEBF00E078F1 /* CCImagesModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 10AAA56C1C83CEBF00E078F1 /* CCImagesModel.m */; };
-		10AAA5711C83EC1D00E078F1 /* NSObject+Log.m in Sources */ = {isa = PBXBuildFile; fileRef = 10AAA5701C83EC1D00E078F1 /* NSObject+Log.m */; };
 		10AC36961C8063AB00F6C89E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 10AC36951C8063AB00F6C89E /* main.m */; };
 		10AC36991C8063AC00F6C89E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 10AC36981C8063AC00F6C89E /* AppDelegate.m */; };
 		10AC36A11C8063AC00F6C89E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 10AC36A01C8063AC00F6C89E /* Assets.xcassets */; };
@@ -20,8 +28,6 @@
 		10E13BF31C80731B00496D7F /* CCHeadLineController.m in Sources */ = {isa = PBXBuildFile; fileRef = 10E13BF21C80731B00496D7F /* CCHeadLineController.m */; };
 		10E13BF61C807FDF00496D7F /* CCHeadLineCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 10E13BF51C807FDF00496D7F /* CCHeadLineCell.m */; };
 		10E13BF91C80813E00496D7F /* CCHeadLineModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 10E13BF81C80813E00496D7F /* CCHeadLineModel.m */; };
-		10E13BFD1C80881400496D7F /* CCHTTPManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 10E13BFC1C80881400496D7F /* CCHTTPManager.m */; };
-		10E13C001C80894800496D7F /* CCApiManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 10E13BFF1C80894800496D7F /* CCApiManager.m */; };
 		93A673EE8E171A992DB1BF4B /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4969E98706F8125BB6C14D38 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -32,10 +38,24 @@
 		1050C6961C82B6330097568B /* CCNewsCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CCNewsCell.m; path = ../Model/CCNewsCell.m; sourceTree = "<group>"; };
 		1050C6981C82B6570097568B /* CCNewsModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCNewsModel.h; sourceTree = "<group>"; };
 		1050C6991C82B6570097568B /* CCNewsModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCNewsModel.m; sourceTree = "<group>"; };
+		10510BC41C841CA800B80C18 /* topic_news.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = topic_news.json; sourceTree = "<group>"; };
+		10510BC91C84254400B80C18 /* CCChannelModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCChannelModel.h; sourceTree = "<group>"; };
+		10510BCA1C84254400B80C18 /* CCChannelModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCChannelModel.m; sourceTree = "<group>"; };
+		10510BCE1C84254A00B80C18 /* CCApiManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCApiManager.h; sourceTree = "<group>"; };
+		10510BCF1C84254A00B80C18 /* CCApiManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCApiManager.m; sourceTree = "<group>"; };
+		10510BD01C84254A00B80C18 /* CCHTTPManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCHTTPManager.h; sourceTree = "<group>"; };
+		10510BD11C84254A00B80C18 /* CCHTTPManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCHTTPManager.m; sourceTree = "<group>"; };
+		10510BD31C84254A00B80C18 /* NSObject+Log.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Log.h"; sourceTree = "<group>"; };
+		10510BD41C84254A00B80C18 /* NSObject+Log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Log.m"; sourceTree = "<group>"; };
+		10510BD81C84323200B80C18 /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		10510BDA1C84325000B80C18 /* CCHomeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCHomeController.h; sourceTree = "<group>"; };
+		10510BDB1C84325000B80C18 /* CCHomeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCHomeController.m; sourceTree = "<group>"; };
+		10510BDD1C84334800B80C18 /* CCChannelLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCChannelLabel.h; sourceTree = "<group>"; };
+		10510BDE1C84334800B80C18 /* CCChannelLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCChannelLabel.m; sourceTree = "<group>"; };
+		10510BE01C8444B800B80C18 /* CCChannelNewsCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCChannelNewsCell.h; sourceTree = "<group>"; };
+		10510BE11C8444B800B80C18 /* CCChannelNewsCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCChannelNewsCell.m; sourceTree = "<group>"; };
 		10AAA56B1C83CEBF00E078F1 /* CCImagesModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCImagesModel.h; sourceTree = "<group>"; };
 		10AAA56C1C83CEBF00E078F1 /* CCImagesModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCImagesModel.m; sourceTree = "<group>"; };
-		10AAA56F1C83EC1D00E078F1 /* NSObject+Log.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Log.h"; sourceTree = "<group>"; };
-		10AAA5701C83EC1D00E078F1 /* NSObject+Log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Log.m"; sourceTree = "<group>"; };
 		10AC36911C8063AB00F6C89E /* News.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = News.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		10AC36951C8063AB00F6C89E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		10AC36971C8063AB00F6C89E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -50,10 +70,6 @@
 		10E13BF51C807FDF00496D7F /* CCHeadLineCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCHeadLineCell.m; sourceTree = "<group>"; };
 		10E13BF71C80813E00496D7F /* CCHeadLineModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCHeadLineModel.h; sourceTree = "<group>"; };
 		10E13BF81C80813E00496D7F /* CCHeadLineModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCHeadLineModel.m; sourceTree = "<group>"; };
-		10E13BFB1C80881400496D7F /* CCHTTPManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCHTTPManager.h; sourceTree = "<group>"; };
-		10E13BFC1C80881400496D7F /* CCHTTPManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCHTTPManager.m; sourceTree = "<group>"; };
-		10E13BFE1C80894800496D7F /* CCApiManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCApiManager.h; sourceTree = "<group>"; };
-		10E13BFF1C80894800496D7F /* CCApiManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCApiManager.m; sourceTree = "<group>"; };
 		4969E98706F8125BB6C14D38 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E43602296FE3206B31D0B0D /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		F4F929A9E94E9D1BCA663504 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
@@ -71,11 +87,63 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		10AAA56E1C83EC1D00E078F1 /* Log */ = {
+		10510BC61C84254400B80C18 /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				10AAA56F1C83EC1D00E078F1 /* NSObject+Log.h */,
-				10AAA5701C83EC1D00E078F1 /* NSObject+Log.m */,
+				10510BC71C84254400B80C18 /* Controller */,
+				10510BC81C84254400B80C18 /* Model */,
+				10510BCB1C84254400B80C18 /* View */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		10510BC71C84254400B80C18 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				10510BDA1C84325000B80C18 /* CCHomeController.h */,
+				10510BDB1C84325000B80C18 /* CCHomeController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		10510BC81C84254400B80C18 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				10510BC91C84254400B80C18 /* CCChannelModel.h */,
+				10510BCA1C84254400B80C18 /* CCChannelModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		10510BCB1C84254400B80C18 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				10510BD81C84323200B80C18 /* Home.storyboard */,
+				10510BDD1C84334800B80C18 /* CCChannelLabel.h */,
+				10510BDE1C84334800B80C18 /* CCChannelLabel.m */,
+				10510BE01C8444B800B80C18 /* CCChannelNewsCell.h */,
+				10510BE11C8444B800B80C18 /* CCChannelNewsCell.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		10510BCD1C84254A00B80C18 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				10510BCE1C84254A00B80C18 /* CCApiManager.h */,
+				10510BCF1C84254A00B80C18 /* CCApiManager.m */,
+				10510BD01C84254A00B80C18 /* CCHTTPManager.h */,
+				10510BD11C84254A00B80C18 /* CCHTTPManager.m */,
+				10510BD21C84254A00B80C18 /* Log */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		10510BD21C84254A00B80C18 /* Log */ = {
+			isa = PBXGroup;
+			children = (
+				10510BD31C84254A00B80C18 /* NSObject+Log.h */,
+				10510BD41C84254A00B80C18 /* NSObject+Log.m */,
 			);
 			path = Log;
 			sourceTree = "<group>";
@@ -101,7 +169,8 @@
 		10AC36931C8063AB00F6C89E /* News */ = {
 			isa = PBXGroup;
 			children = (
-				10E13BFA1C8087C900496D7F /* Tools */,
+				10510BCD1C84254A00B80C18 /* Tools */,
+				10510BC61C84254400B80C18 /* Home */,
 				10E13BEB1C80719F00496D7F /* News */,
 				10AC36971C8063AB00F6C89E /* AppDelegate.h */,
 				10AC36981C8063AC00F6C89E /* AppDelegate.m */,
@@ -116,6 +185,7 @@
 		10AC36941C8063AB00F6C89E /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				10510BC41C841CA800B80C18 /* topic_news.json */,
 				10AC36951C8063AB00F6C89E /* main.m */,
 			);
 			name = "Supporting Files";
@@ -165,18 +235,6 @@
 				1050C6961C82B6330097568B /* CCNewsCell.m */,
 			);
 			path = View;
-			sourceTree = "<group>";
-		};
-		10E13BFA1C8087C900496D7F /* Tools */ = {
-			isa = PBXGroup;
-			children = (
-				10AAA56E1C83EC1D00E078F1 /* Log */,
-				10E13BFB1C80881400496D7F /* CCHTTPManager.h */,
-				10E13BFC1C80881400496D7F /* CCHTTPManager.m */,
-				10E13BFE1C80894800496D7F /* CCApiManager.h */,
-				10E13BFF1C80894800496D7F /* CCApiManager.m */,
-			);
-			name = Tools;
 			sourceTree = "<group>";
 		};
 		67C589FB47CF237D41110E8F /* Frameworks */ = {
@@ -258,7 +316,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				10AC36A41C8063AC00F6C89E /* LaunchScreen.storyboard in Resources */,
+				10510BD91C84323200B80C18 /* Home.storyboard in Resources */,
 				10E13BF01C8071C000496D7F /* News.storyboard in Resources */,
+				10510BC51C841CA800B80C18 /* topic_news.json in Resources */,
 				10AC36A11C8063AC00F6C89E /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -318,17 +378,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				10510BDF1C84334800B80C18 /* CCChannelLabel.m in Sources */,
+				10510BD51C84254A00B80C18 /* CCApiManager.m in Sources */,
 				10AC36991C8063AC00F6C89E /* AppDelegate.m in Sources */,
+				10510BD71C84254A00B80C18 /* NSObject+Log.m in Sources */,
 				10AC36961C8063AB00F6C89E /* main.m in Sources */,
-				10AAA5711C83EC1D00E078F1 /* NSObject+Log.m in Sources */,
-				10E13C001C80894800496D7F /* CCApiManager.m in Sources */,
+				10510BD61C84254A00B80C18 /* CCHTTPManager.m in Sources */,
 				10AAA56D1C83CEBF00E078F1 /* CCImagesModel.m in Sources */,
 				10E13BF31C80731B00496D7F /* CCHeadLineController.m in Sources */,
 				1050C69A1C82B6570097568B /* CCNewsModel.m in Sources */,
+				10510BDC1C84325000B80C18 /* CCHomeController.m in Sources */,
+				10510BE21C8444B800B80C18 /* CCChannelNewsCell.m in Sources */,
 				1050C6971C82B6330097568B /* CCNewsCell.m in Sources */,
 				1050C6941C82B5500097568B /* CCNewsController.m in Sources */,
-				10E13BFD1C80881400496D7F /* CCHTTPManager.m in Sources */,
 				10E13BF91C80813E00496D7F /* CCHeadLineModel.m in Sources */,
+				10510BCC1C84254400B80C18 /* CCChannelModel.m in Sources */,
 				10E13BF61C807FDF00496D7F /* CCHeadLineCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

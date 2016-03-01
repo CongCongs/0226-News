@@ -10,4 +10,6 @@
 
 @interface CCNewsController : UITableViewController
 
+@property (nonatomic,copy) NSString *channelID;
+
 @end
