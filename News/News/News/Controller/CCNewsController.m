@@ -26,6 +26,7 @@
 }
 
 - (void)loadData {
+ 
     __weak typeof(self) weakSelf = self;
     [CCNewsModel newsModelWithURL:[NSString stringWithFormat:@"article/headline/%@/0-20.html",self.channelID] finished:^(NSArray *data) {
         weakSelf.data = data;

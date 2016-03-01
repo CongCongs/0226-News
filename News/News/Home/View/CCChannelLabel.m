@@ -35,7 +35,7 @@
     CGFloat percen = (CCSelectedFont-CCNormalFont)/CCNormalFont*scale+1;
     if (percen < 1) percen = 1;
     self.transform = CGAffineTransformMakeScale(percen, percen);
-    self.textColor = [UIColor colorWithRed:scale green:0 blue:0 alpha:YES];
+    self.textColor = [UIColor colorWithRed:scale green:0 blue:0 alpha:1];
 
 }
 @end

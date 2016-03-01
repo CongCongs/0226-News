@@ -10,6 +10,7 @@
 #import "CCChannelModel.h"
 #import "CCChannelLabel.h"
 #import "CCChannelNewsCell.h"
+#import "CCNewsController.h"
 
 @interface CCHomeController () <UICollectionViewDelegate,UICollectionViewDataSource>
 
@@ -18,6 +19,7 @@
 @property (weak, nonatomic) IBOutlet UICollectionViewFlowLayout *layout;
 @property (nonatomic,strong) NSArray *channels;
 @property (nonatomic,assign) NSInteger currentPage;
+@property (nonatomic,strong) NSMutableDictionary *controllerCache;
 
 @end
 
@@ -35,6 +37,36 @@
     [super viewDidLayoutSubviews];
     [self setupView];
 }
+// 加载控制器
+- (CCNewsController *)newsControllerWithChannel:(CCChannelModel *)model {
+    // 从缓存池加载
+    CCNewsController *news = [self.controllerCache objectForKey:model.tid];
+    if (news == nil) {
+        // 从sb加载
+        UIStoryboard *sb = [UIStoryboard storyboardWithName:@"News" bundle:nil];
+        news = sb.instantiateInitialViewController;
+        news.channelID = model.tid;
+        // 添加到缓存池
+        [self.controllerCache setObject:news forKey:model.tid];
+    }
+    return news;
+}
+
+- (void)adjustLabelContentOffset {
+    CCChannelLabel *currentLabel = self.scrollView.subviews[self.currentPage];
+    CGFloat offSet = currentLabel.center.x - self.scrollView.bounds.size.width / 2;
+    NSLog(@"%f--%f",currentLabel.center.x,offSet);
+    if (offSet < 0) {
+        offSet = 0;
+    }
+    CGFloat maxOffSet = self.scrollView.contentSize.width - self.scrollView.bounds.size.width;
+    if (offSet > maxOffSet) {
+        offSet = maxOffSet;
+    }
+    [self.scrollView setContentOffset:CGPointMake(offSet, 0) animated:YES];
+}
+
+#pragma mark - 界面设置
 
 - (void)setupView {
     self.collectionView.backgroundColor = [UIColor whiteColor];
@@ -52,6 +84,8 @@
     self.collectionView.bounces = NO;
 }
 
+#pragma mark - 加载界面数据
+
 - (void)loadData {
     
     NSArray *data = [CCChannelModel channels];
@@ -60,6 +94,7 @@
         return [obj1.tid compare:obj2.tid];
     }];
     self.channels = data;
+    self.currentPage = 0;
     
     __weak typeof(self) weakSelf = self;
     __block CGFloat x = 0;
@@ -71,8 +106,14 @@
         label.frame = CGRectMake(x, y, w, h);
         x += w;
         
+        __weak typeof(label) weakLabel = label;
         [label setClicked:^{
             [weakSelf.collectionView scrollToItemAtIndexPath:[NSIndexPath indexPathForItem:idx inSection:0] atScrollPosition:UICollectionViewScrollPositionCenteredHorizontally animated:NO];
+            weakLabel.scale = 1;
+            CCChannelLabel *currentLabel = weakSelf.scrollView.subviews[weakSelf.currentPage];
+            currentLabel.scale = 0;
+            weakSelf.currentPage = idx;
+            [weakSelf adjustLabelContentOffset];
         }];
         if (idx == 0) {
             label.scale = 1;
@@ -85,16 +126,32 @@
     [self.collectionView reloadData];
 }
 
+#pragma mark - collectionView数据源
+
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
     return self.channels.count;
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
     CCChannelNewsCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"CCChannelNewsCell" forIndexPath:indexPath];
+    // 添加新View之前移除旧View
+    [cell.news.view removeFromSuperview];
+    
     CCChannelModel *channel = self.channels[indexPath.item];
-    cell.channel = channel;
+    CCNewsController *news = [self newsControllerWithChannel:channel];
+    // 把子控制器添加到父控制器(响应者链条)
+    if (![self.childViewControllers containsObject:news]) {
+        [self addChildViewController:news];
+    }
+    news.view.frame = cell.contentView.bounds;
+    [cell.contentView addSubview:news.view];
+    // 记录当前cell的View
+    cell.news = news;
+//    cell.channel = channel;
     return cell;
 }
+
+#pragma mark - scrollView代理
 
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView {
     // 获得可视范围cell的indexPath
@@ -122,5 +179,15 @@
     CGFloat width = self.collectionView.bounds.size.width;
     CGFloat offSet = self.collectionView.contentOffset.x;
     self.currentPage = (NSInteger)offSet / width;
+    [self adjustLabelContentOffset];
+}
+
+#pragma mark - 懒加载
+
+- (NSMutableDictionary *)controllerCache {
+    if (_controllerCache == nil) {
+        _controllerCache = [NSMutableDictionary dictionary];
+    }
+    return _controllerCache;
 }
 @end

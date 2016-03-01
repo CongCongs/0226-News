@@ -7,10 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
-@class CCChannelModel;
+//@class CCChannelModel;
+@class CCNewsController;
 
 @interface CCChannelNewsCell : UICollectionViewCell
 
-@property (nonatomic,strong) CCChannelModel *channel;
+//@property (nonatomic,strong) CCChannelModel *channel;
+@property (nonatomic,strong) CCNewsController *news;
 
 @end
