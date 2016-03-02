@@ -10,6 +10,7 @@
 #import "CCNewsModel.h"
 #import "CCNewsCell.h"
 #import "CCChannelModel.h"
+#import "CCNewsDetailController.h"
 
 @interface CCNewsController ()
 
@@ -48,5 +49,12 @@
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
     CCNewsModel *model = self.data[indexPath.row];
     return [CCNewsCell cellHeightWithModel:model];
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    CCNewsModel *model = self.data[indexPath.row];
+    CCNewsDetailController *ndc = [[CCNewsDetailController alloc] init];
+    ndc.newsURL = model.detailURL;
+    [self.navigationController pushViewController:ndc animated:YES];
 }
 @end

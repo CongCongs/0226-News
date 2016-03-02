@@ -220,7 +220,7 @@
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Cell" id="ePR-IQ-dBG" customClass="CCHeadLineCell">
-                                        <rect key="frame" x="62" y="0.0" width="289.5" height="468"/>
+                                        <rect key="frame" x="62" y="0.0" width="290" height="468"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                             <rect key="frame" x="0.0" y="0.0" width="290" height="468"/>

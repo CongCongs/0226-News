@@ -55,7 +55,7 @@
 - (void)adjustLabelContentOffset {
     CCChannelLabel *currentLabel = self.scrollView.subviews[self.currentPage];
     CGFloat offSet = currentLabel.center.x - self.scrollView.bounds.size.width / 2;
-    NSLog(@"%f--%f",currentLabel.center.x,offSet);
+
     if (offSet < 0) {
         offSet = 0;
     }

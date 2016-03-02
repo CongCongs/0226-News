@@ -19,6 +19,8 @@
 		10510BDC1C84325000B80C18 /* CCHomeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 10510BDB1C84325000B80C18 /* CCHomeController.m */; };
 		10510BDF1C84334800B80C18 /* CCChannelLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 10510BDE1C84334800B80C18 /* CCChannelLabel.m */; };
 		10510BE21C8444B800B80C18 /* CCChannelNewsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 10510BE11C8444B800B80C18 /* CCChannelNewsCell.m */; };
+		106D39191C8588FB00C4E5F5 /* CCNewsDetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = 106D39181C8588FB00C4E5F5 /* CCNewsDetailController.m */; };
+		106D391B1C85A8F200C4E5F5 /* detail.html in Resources */ = {isa = PBXBuildFile; fileRef = 106D391A1C85A8F200C4E5F5 /* detail.html */; };
 		10AAA56D1C83CEBF00E078F1 /* CCImagesModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 10AAA56C1C83CEBF00E078F1 /* CCImagesModel.m */; };
 		10AC36961C8063AB00F6C89E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 10AC36951C8063AB00F6C89E /* main.m */; };
 		10AC36991C8063AC00F6C89E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 10AC36981C8063AC00F6C89E /* AppDelegate.m */; };
@@ -54,6 +56,9 @@
 		10510BDE1C84334800B80C18 /* CCChannelLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCChannelLabel.m; sourceTree = "<group>"; };
 		10510BE01C8444B800B80C18 /* CCChannelNewsCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCChannelNewsCell.h; sourceTree = "<group>"; };
 		10510BE11C8444B800B80C18 /* CCChannelNewsCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCChannelNewsCell.m; sourceTree = "<group>"; };
+		106D39171C8588FB00C4E5F5 /* CCNewsDetailController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCNewsDetailController.h; sourceTree = "<group>"; };
+		106D39181C8588FB00C4E5F5 /* CCNewsDetailController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCNewsDetailController.m; sourceTree = "<group>"; };
+		106D391A1C85A8F200C4E5F5 /* detail.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = detail.html; sourceTree = "<group>"; };
 		10AAA56B1C83CEBF00E078F1 /* CCImagesModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCImagesModel.h; sourceTree = "<group>"; };
 		10AAA56C1C83CEBF00E078F1 /* CCImagesModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCImagesModel.m; sourceTree = "<group>"; };
 		10AC36911C8063AB00F6C89E /* News.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = News.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -185,6 +190,7 @@
 		10AC36941C8063AB00F6C89E /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				106D391A1C85A8F200C4E5F5 /* detail.html */,
 				10510BC41C841CA800B80C18 /* topic_news.json */,
 				10AC36951C8063AB00F6C89E /* main.m */,
 			);
@@ -208,6 +214,8 @@
 				10E13BF21C80731B00496D7F /* CCHeadLineController.m */,
 				1050C6921C82B5500097568B /* CCNewsController.h */,
 				1050C6931C82B5500097568B /* CCNewsController.m */,
+				106D39171C8588FB00C4E5F5 /* CCNewsDetailController.h */,
+				106D39181C8588FB00C4E5F5 /* CCNewsDetailController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -318,6 +326,7 @@
 				10AC36A41C8063AC00F6C89E /* LaunchScreen.storyboard in Resources */,
 				10510BD91C84323200B80C18 /* Home.storyboard in Resources */,
 				10E13BF01C8071C000496D7F /* News.storyboard in Resources */,
+				106D391B1C85A8F200C4E5F5 /* detail.html in Resources */,
 				10510BC51C841CA800B80C18 /* topic_news.json in Resources */,
 				10AC36A11C8063AC00F6C89E /* Assets.xcassets in Resources */,
 			);
@@ -389,6 +398,7 @@
 				1050C69A1C82B6570097568B /* CCNewsModel.m in Sources */,
 				10510BDC1C84325000B80C18 /* CCHomeController.m in Sources */,
 				10510BE21C8444B800B80C18 /* CCChannelNewsCell.m in Sources */,
+				106D39191C8588FB00C4E5F5 /* CCNewsDetailController.m in Sources */,
 				1050C6971C82B6330097568B /* CCNewsCell.m in Sources */,
 				1050C6941C82B5500097568B /* CCNewsController.m in Sources */,
 				10E13BF91C80813E00496D7F /* CCHeadLineModel.m in Sources */,

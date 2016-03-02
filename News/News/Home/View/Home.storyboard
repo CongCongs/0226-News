@@ -21,7 +21,7 @@
             </objects>
             <point key="canvasLocation" x="-748" y="351"/>
         </scene>
-        <!--Home Controller-->
+        <!--我的新闻-->
         <scene sceneID="WdJ-Yb-WAh">
             <objects>
                 <viewController id="VNp-uS-2h5" customClass="CCHomeController" sceneMemberID="viewController">
@@ -75,7 +75,9 @@
                             <constraint firstItem="vR8-F7-I2y" firstAttribute="top" secondItem="xFU-6P-VT6" secondAttribute="bottom" id="uLH-GX-xyG"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="XHa-2E-OE1"/>
+                    <navigationItem key="navigationItem" title="我的新闻" id="XHa-2E-OE1">
+                        <barButtonItem key="backBarButtonItem" title="返回" id="nTO-gG-Vcf"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="collectionView" destination="vR8-F7-I2y" id="JE8-44-YRT"/>
                         <outlet property="layout" destination="f5c-MN-d2b" id="eX9-4Q-Bum"/>

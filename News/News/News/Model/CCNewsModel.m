@@ -34,4 +34,10 @@
              @"imgextra":[CCImagesModel class]
              };
 }
+
+- (void)setDocid:(NSString *)docid {
+    // NSString的set方法完整写法
+    _docid = docid.copy;
+    _detailURL = [NSString stringWithFormat:@"article/%@/full.html",docid];
+}
 @end

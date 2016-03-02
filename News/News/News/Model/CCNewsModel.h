@@ -18,6 +18,8 @@
 @property (nonatomic,copy) NSString *imgsrc;
 @property (nonatomic,strong) NSArray<CCImagesModel *> *imgextra;
 @property (nonatomic,assign) NSInteger imgType;
+@property (nonatomic,copy) NSString *docid;
+@property (nonatomic,copy) NSString *detailURL;
 
 + (void)newsModelWithURL:(NSString *)URLString finished:(void(^)(NSArray *data))finished;
 
